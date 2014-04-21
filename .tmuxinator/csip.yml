@@ -1,0 +1,43 @@
+# ~/.tmuxinator/csipsimple.yml
+
+name: csip 
+root: ~/src/CSipSimple-trunk/CSipSimple/
+
+# Optional tmux socket
+# socket_name: foo
+
+# Runs before everything. Use it to start daemons etc.
+# pre: 
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+pre_window:  export PROJECT=csip
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+windows:
+  - javacode:
+    - cd src/com/csipsimple/
+  - pjsipcode:
+    - cd jni/pjsip/sources/
+  - compiling: 
+  - adb_myphone: 
+  - wireshark:
+    - cd ~/t
+  - kam-conf-on-aliyun: 
+    - ssh root@aliyun
+    - cd /usr/local/etc/kamailio/
+  - kam-logs-on-aliyun: 
+    - ssh root@aliyun
+    - tail -f /var/log/daemon.log
+  - turn-logs-on-aliyun: 
+    - ssh root@aliyun
+  - capsip-on-aliyun: 
+    - ssh root@aliyun
+  - router:
+    - ssh root@192.168.11.1
+  - eclipse:
+    - eclipse
