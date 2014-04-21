@@ -50,7 +50,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-PATH="~/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:~/scripts/:~/bin/firefox"
+PATH="$HOME/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:$HOME/scripts/:$HOME/bin/firefox"
 
 
 # # Preferred editor for local and remote sessions
@@ -66,7 +66,7 @@ fi
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-source ~/scripts/tmuxinator.zsh
+source $HOME/scripts/tmuxinator.zsh
 
 #fix for tmuxinator can't set tmux window title
 export DISABLE_AUTO_TITLE=true
