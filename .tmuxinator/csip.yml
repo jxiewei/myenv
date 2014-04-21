@@ -10,7 +10,7 @@ root: ~/src/CSipSimple-trunk/CSipSimple/
 # pre: 
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
-pre_window:  export PROJECT=csip
+pre_window: export PROJECT=csip; source ~/.$PROJECT.zshrc
 
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
 # tmux_options: -f ~/.tmux.mac.conf
