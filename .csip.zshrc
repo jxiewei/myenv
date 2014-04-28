@@ -16,3 +16,12 @@ export csip
 
 pjsip=$csip/jni/pjsip/sources/
 export pjsip
+
+pjmedia=$pjsip/pjmedia/src/pjmedia
+export pjmedia
+
+pjnath=$pjsip/pjnath/src/pjnath
+export pjnath
+
+pjlib=$pjsip/pjlib/src/pj
+export pjlib
