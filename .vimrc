@@ -12,6 +12,9 @@ set fileformats=unix
 set encoding=prc
 set cscopetag
 
+vmap y  <Plug>(fakeclip-screen-y)
+nmap p  <Plug>(fakeclip-screen-p)
+
 if exists("$PROJECT") && filereadable(glob("~/.".$PROJECT.".vimrc"))
     so ~/.$PROJECT.vimrc
 endif
