@@ -70,3 +70,7 @@ source $HOME/scripts/tmuxinator.zsh
 
 #fix for tmuxinator can't set tmux window title
 export DISABLE_AUTO_TITLE=true
+
+if [[ -f $HOME/.$PROJECT.zshrc ]]; then
+    source $HOME/.$PROJECT.zshrc
+fi
