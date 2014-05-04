@@ -7,11 +7,10 @@ root: ~/src/CSipSimple-trunk/CSipSimple/
 # socket_name: foo
 
 # Runs before everything. Use it to start daemons etc.
-# pre: 
+# pre:
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
-pre_window:
-    - export PROJECT=csip
+pre_window: source ~/.csip.zshrc; tmux setenv PROJECT csip
 
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
 # tmux_options: -f ~/.tmux.mac.conf
