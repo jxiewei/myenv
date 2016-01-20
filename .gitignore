@@ -1,0 +1,13 @@
+#erlang specific
+ebin/
+*.beam
+
+#kazoo specific
+/deps/
+
+#vim intermediate files
+*.swp
+*.swo
+
+#gcc output
+*.[ao]
