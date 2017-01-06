@@ -10,4 +10,4 @@ Components
 * zsh
 * tmux
 * tmuxinator
-* vim plugins: `cscope_maps.vim` `NERD_tree.vim` `session.vim` `taglist.vim` `vim-bookmarks`
+* vim plugins: `cscope_maps.vim` `NERD_tree.vim` `session.vim` `taglist.vim` `vim-bookmarks` `autotags`
