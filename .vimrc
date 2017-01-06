@@ -12,11 +12,20 @@ set fileformats=unix
 set encoding=prc
 set cscopetag
 
-vmap y  <Plug>(fakeclip-screen-y)
-nmap yy <Plug>(fakeclip-screen-Y)
-nmap dd <Plug>(fakeclip-screen-dd)
-vmap d  <Plug>(fakeclip-screen-d)
-nmap p  <Plug>(fakeclip-screen-p)
+"map autotags plugin keys
+nmap <C-\>u :call AutotagsUpdate()<CR>
+nmap <C-\>a :call AutotagsAdd()<CR>
+let g:autotags_cscope_file_extensions = ".cpp .cc .cxx .m .hpp .hh .h .hxx .c .idl .java .go .cs"
+
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
+
+let g:bookmark_sign = '>>'
+let g:bookmark_annotation_sign = '##'
+let g:bookmark_save_per_working_dir = 1
+let g:bookmark_auto_save = 1
+"let g:bookmark_auto_save_file = $HOME .'/.vim-bookmarks'
+let g:bookmark_highlight_lines = 1
 
 
 if exists("$PROJECT") && filereadable(glob("~/.".$PROJECT.".vimrc"))
