@@ -11,4 +11,4 @@ Components
 * tmux
 * tmux-resurrect: save/restore tmux environment
 * tpm: tmux plugin manager
-* vim plugins: `cscope_maps.vim` `NERD_tree.vim` `session.vim` `taglist.vim` `vim-bookmarks` `autotags`
+* vim plugins: `cscope_maps.vim` `NERD_tree.vim` `session.vim` `taglist.vim` `vim-bookmarks` `autotags` `minibufexpl`
